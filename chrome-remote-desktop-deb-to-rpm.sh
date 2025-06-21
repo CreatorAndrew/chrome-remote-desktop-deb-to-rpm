@@ -1,7 +1,7 @@
 #!/bin/bash
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $CURRENT_DIR
-PKG_NAME=$(sudo alien --to-rpm --generate --scripts --fixperms ./chrome-remote-desktop_current_amd64.deb)
+PKG_NAME=$(sudo alien --generate --scripts --to-rpm ./chrome-remote-desktop_current_amd64.deb)
 PKG_NAME="${PKG_NAME/Directory /""}"
 PKG_NAME="${PKG_NAME/ prepared./""}"
 cd $PKG_NAME
