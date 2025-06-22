@@ -2,7 +2,6 @@
 Converts the Debian package for Chrome Remote Desktop to an RPM since Google doesn't supply one.
 
 Requires `alien`, which can be acquired with the following command:
-
 ```
 sudo dnf install alien
 ```
