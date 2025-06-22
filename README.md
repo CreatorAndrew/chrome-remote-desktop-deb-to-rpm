@@ -16,6 +16,7 @@ sudo dnf install alien
 Clone the repository with the following command:
 ```
 git clone https://github.com/CreatorAndrew/chrome-remote-desktop-deb-to-rpm.git
+cd chrome-remote-desktop-deb-to-rpm
 ```
 
 Grab the Debian package for Chrome Remote Desktop, which needs to be in the same folder as the script itself. That can be acquired [here](https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb).
