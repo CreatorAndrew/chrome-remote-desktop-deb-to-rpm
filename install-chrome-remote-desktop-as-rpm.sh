@@ -8,8 +8,8 @@ PKG_NAME=${PKG_NAME/Directory /""}
 PKG_NAME=${PKG_NAME/ prepared./""}
 rm chrome-remote-desktop_current_amd64.deb
 cd $PKG_NAME
-sudo sed -i "/^%dir \"\//d" $PKG_NAME-2.spec
 # Remove lines that take ownership of directories; causes conflicts if they are left in
+sudo sed -i "/^%dir \"\//d" $PKG_NAME-2.spec
 rpmbuild --target=x86_64 --buildroot $CURRENT_DIR/$PKG_NAME -bb $PKG_NAME-2.spec > /dev/null
 cd ..
 sudo rm -rf $PKG_NAME
