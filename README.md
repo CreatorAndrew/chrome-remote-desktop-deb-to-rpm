@@ -11,10 +11,19 @@ curl -sSL https://raw.githubusercontent.com/CreatorAndrew/chrome-remote-desktop-
 
 
 ## Conversion from Debian package to RPM (Intermediate)
-
 Requires `alien`, which can be acquired with the following command:
 ```
 sudo dnf install alien
 ```
 
-Also requires the Debian package to be in the same folder as the script itself, which can be acquired [here](https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb).
+Clone the repository with the following command:
+```
+git clone https://github.com/CreatorAndrew/chrome-remote-desktop-deb-to-rpm.git
+```
+
+Grab the Debian package for Chrome Remote Desktop, which needs to be in the same folder as the script itself. That can be acquired [here](https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb).
+
+Finally, run the following command:
+```
+./chrome-remote-desktop-deb-to-rpm.sh
+```
