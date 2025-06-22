@@ -1,17 +1,14 @@
 # Chrome Remote Desktop RPM Maker/Installer
 Converts the Debian package for Chrome Remote Desktop to an RPM since Google doesn't supply one. Also has a quick option to simply install Chrome Remote Desktop as an RPM without any additional input from the user.
 
-
 ## Quick Install (Simple)
-
 One can quickly install Chrome Remote Desktop as an RPM with the following command:
 ```
 curl -sSL https://raw.githubusercontent.com/CreatorAndrew/chrome-remote-desktop-deb-to-rpm/refs/heads/main/install-chrome-remote-desktop-as-rpm.sh | bash
 ```
-
-
+---
 ## Conversion from Debian package to RPM (Intermediate)
-Requires `alien`, which can be acquired with the following command:
+Install `alien`, which can be acquired with the following command:
 ```
 sudo dnf install alien
 ```
